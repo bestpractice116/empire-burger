@@ -1,0 +1,13 @@
+{
+  "git.enabled": false,
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true,
+    ".gitignore": true,
+    "package.json": false,
+    "package-lock.json": true,
+    "public": false,
+    "prettier.config.js": true,
+    "eslintrc.json": true
+  }
+}
