@@ -18,6 +18,7 @@ $ npm start
 ## Tech Stack
 - [ReactJS](https://pt-br.reactjs.org/)
 - [React-icons](https://react-icons.github.io/react-icons/)
+- [Styled-components 💅](https://styled-components.com/)
 
 Desafio proposto por [BRChallenges]([brchallenges](https://www.brchallenges.com/)) criado por 
-[Leonardo Vargas](https://github.com/leovargasdev) e protótipo feito no Figma por [Tiago Alves](https://designerprodutivo.com.br/link-bio/)
+[Leonardo Vargas](https://github.com/leovargasdev) e protótipo feito no Figma por [Tiago Alves](https://designerprodutivo.com.br/link-bio/).

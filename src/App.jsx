@@ -1,9 +1,11 @@
-import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import { GlobalStyle } from "./styles/Global";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div>
+      <GlobalStyle />
+      <Home />
     </div>
   );
 }
