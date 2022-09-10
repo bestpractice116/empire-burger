@@ -2,19 +2,20 @@ import styled from "styled-components";
 import { colors } from "../../styles/Global";
 
 export const Container = styled.section`
-  width: 110rem;
-  margin: auto;
+  margin: 0 auto;
 
   h2 {
     font-family: "Lilita One";
     font-size: 3.2rem;
     font-weight: 400;
     color: ${colors.brown};
+    text-transform: uppercase;
   }
 
   p {
     font-size: 1.6rem;
     font-weight: 400;
+    margin-bottom: 1.6rem;
     color: ${colors.brown_secondary};
   }
 `;

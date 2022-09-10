@@ -5,6 +5,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100vw;
   margin-bottom: 13rem;
 
@@ -21,8 +22,7 @@ export const AdContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: fit-content;
-  left: 130px;
+  width: 117rem;
 
   color: ${colors.brown};
 
