@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Badge, VerticalLine, Hashtag } from "./Style";
 import clockicon from "../../../assets/images/clockicon.png";
+import { colors } from "../../../styles/Global";
 
 const ClosingTime = () => {
-  // TODO State isClosed
+  const [isClosed, setIsClosed] = useState(true);
+  const milliseconds = 2000;
+
+  setInterval(() => {
+    const currentHour = new Date().getHours();
+
+    if (currentHour >= 17 && currentHour < 23) {
+      setIsClosed(false);
+    } else {
+      setIsClosed(true);
+    }
+  }, milliseconds);
 
   return (
     <Container>
-      <Badge>
+      <Badge color={isClosed ? colors.red : "#119911"}>
         <img src={clockicon} alt="icone" />
         <VerticalLine />
         <div>

@@ -28,8 +28,9 @@ export const Badge = styled.div`
 
   margin-right: 3rem;
   padding: 1.8rem 2.2rem;
-  background-color: ${colors.red};
+  background-color: ${(props) => props.color};
   border-radius: 1rem;
+  margin-bottom: 2rem;
 
   div {
     h3 {
