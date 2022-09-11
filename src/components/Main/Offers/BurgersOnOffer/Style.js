@@ -50,13 +50,14 @@ export const OfferInfo = styled.div`
   h3 {
     color: ${(props) => props.color};
     font-family: "Lilita One";
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     line-height: 2.2rem;
+    font-weight: 400;
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: ${(props) => props.color};
     font-weight: 400;
   }
