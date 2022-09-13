@@ -72,4 +72,9 @@ export const Button = styled.button`
   outline: none;
   border: none;
   border-radius: 5px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    box-shadow: inset 10em 0 0 0 #cd0000bb;
+  }
 `;

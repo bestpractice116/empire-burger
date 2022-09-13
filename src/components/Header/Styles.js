@@ -26,7 +26,7 @@ export const Navigation = styled.div`
   width: 110rem;
 `;
 
-export const Logo = styled.div`
+export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   margin-right: 8rem;
@@ -39,10 +39,6 @@ export const Logo = styled.div`
     span {
       font-weight: 900;
     }
-  }
-
-  img {
-    margin-right: 0.75rem;
   }
 `;
 

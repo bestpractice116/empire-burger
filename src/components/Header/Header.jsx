@@ -1,28 +1,31 @@
 import React from "react";
-import crown from "../../assets/images/crown.png";
-import SocialIcons from "../Shared/SocialIcons/SocialIcons";
-
+import { colors } from "../../styles/Global";
 import {
   Container,
   Navigation,
-  Logo,
+  LogoContainer,
   Nav,
   SocialMedia,
   VerticalLine,
 } from "./Styles";
 
+import SocialIcons from "../Shared/SocialIcons/SocialIcons";
+import Logo from "../Shared/Svg/Logo";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Header = () => {
   return (
     <Container>
       <Navigation>
-        <Logo>
-          <img src={crown} alt="Empire Burger Logo" />
+        <LogoContainer>
+          <Logo
+            color={colors.brown}
+            style={{ marginRight: "0.75rem", height: "3rem" }}
+          />
           <h1>
             <span>Empire </span>burger
           </h1>
-        </Logo>
+        </LogoContainer>
 
         <Nav>
           <li>Home</li>

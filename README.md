@@ -6,7 +6,7 @@ Este projeto é uma landing page desenvolvida para uma hamburgueria fictícia ch
 ## Instalação e execução
 ```
 # Clonando repositório e entrando na pasta
-$ git clone https://github.com/HarlonGarcia/EmpireBurger.git && cd empire-burger
+$ git clone https://github.com/HarlonGarcia/EmpireBurger.git && cd EmpireBurger
 
 # Instalando dependências necessárias
 $ npm install
@@ -20,5 +20,4 @@ $ npm start
 - [React-icons](https://react-icons.github.io/react-icons/)
 - [Styled-components 💅](https://styled-components.com/)
 
-Desafio proposto por [BRChallenges]([brchallenges](https://www.brchallenges.com/)) criado por 
-[Leonardo Vargas](https://github.com/leovargasdev) e protótipo feito no Figma por [Tiago Alves](https://designerprodutivo.com.br/link-bio/).
+Desafio proposto por [BRChallenges]([brchallenges](https://www.brchallenges.com/)), site de desafios criado por [Leonardo Vargas](https://github.com/leovargasdev) e [protótipo](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg/Empire-Burger?node-id=0%3A1) feito no Figma por [Tiago Alves](https://designerprodutivo.com.br/link-bio/).
