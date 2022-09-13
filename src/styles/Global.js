@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 import LilitaOne from "../assets/fonts/lilitaone.woff";
 import Lato from "../assets/fonts/lato.woff";
+import Inter from "../assets/fonts/inter.woff";
 
 export const colors = {
   red: "#f43127",
@@ -12,6 +13,7 @@ export const colors = {
   bg_color: "#FAF3F2",
   white: "#FFFFFF",
   onhover: "#B29B8480",
+  brown_primary: "#1D0605E5",
   brown_secondary: "#1D0605B0",
 };
 
@@ -24,6 +26,11 @@ export const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Lato';
   src: url(${Lato}) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(${Inter}) format('woff');
 }
 
   *,
