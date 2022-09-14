@@ -1,6 +1,7 @@
 # Empire Burger
 
 Este projeto é uma landing page desenvolvida para uma hamburgueria fictícia chamada Empire Burger!
+
 (EM ANDAMENTO)
 
 <br>
@@ -45,6 +46,8 @@ Segue os critérios de avaliação por nível:
 
 - [x] Na seção "Onde fica o nosso castelo" você deverá ser incorporada uma localização do Google Maps.
 
+<br>
+
 ### Nível Médio
 
 - [x] Todos os requisitos do nivel fácil.
@@ -54,6 +57,8 @@ Segue os critérios de avaliação por nível:
 - [ ] Na seção "Cardápio" os preços devem ser formatados com o método ```Intl.NumberFormat```.
 
 - [x] O card "Horário de funcionamento" deverá ter os estados aberto e fechado, o estado será alterado conforme o horário do navegador do usuário.
+
+<br>
 
 ### Nível Difícil
 

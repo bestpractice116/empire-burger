@@ -2,15 +2,27 @@ import React, { useState } from "react";
 import { Container, Badge, VerticalLine, Hashtag } from "./Style";
 import clockicon from "../../../assets/images/clockicon.png";
 import { colors } from "../../../styles/Global";
+import { days_open } from "../../../utils/constants/days_open";
 
 const ClosingTime = () => {
   const [isClosed, setIsClosed] = useState(true);
   const milliseconds = 2000;
 
   setInterval(() => {
-    const currentHour = new Date().getHours();
+    const currentDate = new Date();
+    const currentHour = currentDate.getHours();
+    const currentDay = currentDate.getDay();
+    let initialTime = 17;
+    let finalTime = 23;
 
-    if (currentHour >= 17 && currentHour < 23) {
+    if (
+      currentDay >= days_open["segunda"] &&
+      currentDay <= days_open["sexta"]
+    ) {
+      initialTime = 18;
+    }
+
+    if (currentHour >= initialTime && currentHour < finalTime) {
       setIsClosed(false);
     } else {
       setIsClosed(true);
