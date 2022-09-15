@@ -1,9 +1,16 @@
 import styled from "styled-components";
 import { colors } from "../../../styles/Global";
+import { device } from "../../../utils/constants/sizes";
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (${device.laptop}) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 `;
 
 export const Hashtag = styled.div`
@@ -19,6 +26,12 @@ export const Hashtag = styled.div`
     font-family: "Lilita One";
     text-transform: uppercase;
     color: ${colors.red};
+  }
+
+  @media screen and (${device.laptop}) {
+    h3 {
+      font-size: 4rem;
+    }
   }
 `;
 
@@ -47,6 +60,10 @@ export const Badge = styled.div`
       margin-bottom: 1rem;
       font-weight: 400;
     }
+  }
+
+  @media screen and (${device.laptop}) {
+    margin-bottom: 6.4rem;
   }
 `;
 

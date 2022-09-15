@@ -18,7 +18,7 @@ const Banner = () => {
         <Button>Comprar Agora</Button>
       </AdContainer>
       <Advantages />
-      <img src={banner} alt="" />
+      <img src={banner} alt="King Burger" />
     </Container>
   );
 };

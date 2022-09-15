@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { device } from "../../../../utils/constants/sizes";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr); //1fr 1fr
   max-width: fit-content;
   grid-gap: 3rem;
   row-gap: 2.6rem;
@@ -38,6 +39,16 @@ export const Container = styled.div`
         text-transform: uppercase;
         line-height: 2.2rem;
       }
+    }
+  }
+
+  @media screen and (${device.laptop}) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+
+    article:nth-child(1) {
+      grid-column: 1/3;
     }
   }
 `;

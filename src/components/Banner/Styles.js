@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/Global";
+import { device } from "../../utils/constants/sizes";
 
 export const Container = styled.section`
   display: flex;
@@ -54,6 +55,18 @@ export const AdContainer = styled.div`
       padding: 0.2rem 0.5rem;
     }
   }
+
+  @media screen and (${device.laptop}) {
+    max-width: 90rem;
+
+    h2 {
+      font-size: 5.7rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -67,7 +80,7 @@ export const Button = styled.button`
 
   background-color: ${colors.red};
   color: ${colors.white};
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
   outline: none;
   border: none;
@@ -76,5 +89,9 @@ export const Button = styled.button`
 
   &:hover {
     box-shadow: inset 10em 0 0 0 #cd0000bb;
+  }
+
+  @media screen and (${device.laptop}) {
+    font-size: 1.8rem;
   }
 `;

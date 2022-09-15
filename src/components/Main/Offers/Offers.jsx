@@ -8,7 +8,7 @@ const Offers = () => {
       <h2>Ofertas especiais</h2>
       <p>
         Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque
-        sempre estamos mudando o nosso cardapio.
+        sempre estamos mudando o nosso cardapio.aaaaaaaaaaaaa
       </p>
       <BurgersOnOffer />
     </Container>

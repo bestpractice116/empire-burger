@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../../styles/Global";
+import { device } from "../../../utils/constants/sizes";
 
 export const Container = styled.section`
   margin: 0 auto;
@@ -14,9 +15,17 @@ export const Container = styled.section`
   }
 
   p {
+    width: 100%;
+    text-overflow: ellipsis;
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1.6rem;
     color: ${colors.brown_secondary};
+  }
+
+  @media screen and (${device.laptop}) {
+    p {
+      width: 70.5rem;
+    }
   }
 `;

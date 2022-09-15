@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/Global";
+import { device } from "../../utils/constants/sizes";
 
 export const Container = styled.section`
   display: flex;
@@ -90,10 +91,33 @@ export const Nav = styled.div`
       font-weight: 400;
     }
   }
+
+  @media screen and (${device.laptop}) {
+    width: 90rem;
+
+    div {
+      h1 {
+        font-size: 2.05rem;
+      }
+    }
+
+    ul {
+      margin-right: 9rem;
+
+      li {
+        font-size: 1.8rem;
+        margin-right: 1.8rem;
+      }
+    }
+  }
 `;
 
 export const HorizontalLine = styled.div`
   width: 110rem;
   margin: 0 auto;
   border-bottom: 1px solid rgba(29, 6, 5, 0.15);
+
+  @media screen and (${device.laptop}) {
+    width: 90rem;
+  }
 `;

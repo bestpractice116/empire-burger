@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/Global";
+import { device } from "../../utils/constants/sizes";
 
 export const Container = styled.div`
   display: flex;
@@ -8,22 +9,24 @@ export const Container = styled.div`
 
   position: absolute;
   top: 0;
-
   height: 6.3rem;
-
   width: 100%;
 
   background-color: rgba(59, 32, 11, 0.05);
   color: ${colors.brown};
-
   backdrop-filter: blur(10px);
 `;
 
 export const Navigation = styled.div`
   display: flex;
   align-items: center;
+  height: 100%;
   justify-content: space-between;
   width: 110rem;
+
+  @media screen and (${device.laptop}) {
+    width: 90rem;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -35,9 +38,18 @@ export const LogoContainer = styled.div`
     font-weight: 400;
     text-transform: uppercase;
     font-size: 2.9rem;
+    width: fit-content;
 
     span {
       font-weight: 900;
+    }
+  }
+
+  @media screen and (${device.laptop}) {
+    margin-right: 5rem;
+
+    h1 {
+      font-size: 2.05rem;
     }
   }
 `;
@@ -53,11 +65,21 @@ export const Nav = styled.ul`
     margin-right: 1.6rem;
     line-height: 2.5rem;
   }
+
+  @media screen and (${device.laptop}) {
+    margin-right: 5rem;
+
+    li {
+      font-size: 1.5rem;
+      margin-right: 1.4rem;
+    }
+  }
 `;
 
 export const SocialMedia = styled.div`
   display: flex;
   align-items: center;
+  height: 100%;
 
   img {
     width: 3rem;
