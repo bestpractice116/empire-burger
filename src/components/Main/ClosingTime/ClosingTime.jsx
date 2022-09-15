@@ -19,6 +19,8 @@ const ClosingTime = () => {
       currentDay >= days_open["segunda"] &&
       currentDay <= days_open["sexta"]
     ) {
+      initialTime = 17;
+    } else {
       initialTime = 18;
     }
 
@@ -31,7 +33,7 @@ const ClosingTime = () => {
 
   return (
     <Container>
-      <Badge color={isClosed ? colors.red : "#119911"}>
+      <Badge color={isClosed ? colors.red : colors.green}>
         <img src={clockicon} alt="icone" />
         <VerticalLine />
         <div>

@@ -7,6 +7,7 @@ import Inter from "../assets/fonts/inter.woff";
 export const colors = {
   red: "#f43127",
   yellow: "#f59a1b",
+  green: "#11b811ee",
   beige: "#fae2cb",
   brown: "#3b200b",
   title_brown: "#635352",
