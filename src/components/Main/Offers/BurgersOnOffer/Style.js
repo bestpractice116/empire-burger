@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../../../styles/Global";
 import { device } from "../../../../utils/constants/sizes";
 
 export const Container = styled.div`
@@ -27,13 +28,13 @@ export const Container = styled.div`
 
       h4 {
         font-size: 1.9rem;
-        color: #fff;
+        color: ${colors.white};
         font-weight: 100;
         margin-bottom: 1rem;
       }
 
       h3 {
-        color: #fff;
+        color: ${colors.white};
         font-family: "Lilita One";
         font-size: 3.7rem;
         text-transform: uppercase;
@@ -49,6 +50,30 @@ export const Container = styled.div`
 
     article:nth-child(1) {
       grid-column: 1/3;
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    display: flex;
+    flex-direction: column;
+
+    article {
+      width: 40rem;
+
+      span {
+        h4 {
+          font-size: 1.6rem;
+          margin-bottom: 0.25rem;
+        }
+
+        h3 {
+          font-size: 2.7rem;
+        }
+      }
+
+      img {
+        width: 40rem;
+      }
     }
   }
 `;
@@ -71,5 +96,15 @@ export const OfferInfo = styled.div`
     font-size: 1.8rem;
     color: ${(props) => props.color};
     font-weight: 400;
+  }
+
+  @media screen and (${device.ipad}) {
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+    }
   }
 `;

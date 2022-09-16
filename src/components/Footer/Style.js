@@ -110,6 +110,25 @@ export const Nav = styled.div`
       }
     }
   }
+
+  @media screen and (${device.tablet}) {
+    width: 80rem;
+
+    div {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    ul {
+      margin-right: 7.5rem;
+
+      li {
+        font-size: 1.6rem;
+        margin-right: 1.6rem;
+      }
+    }
+  }
 `;
 
 export const HorizontalLine = styled.div`

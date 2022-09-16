@@ -16,16 +16,26 @@ export const Container = styled.section`
 
   p {
     width: 100%;
-    text-overflow: ellipsis;
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1.6rem;
     color: ${colors.brown_secondary};
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   @media screen and (${device.laptop}) {
     p {
       width: 70.5rem;
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    p {
+      width: 40rem;
     }
   }
 `;

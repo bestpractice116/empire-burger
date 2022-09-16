@@ -27,6 +27,14 @@ export const Navigation = styled.div`
   @media screen and (${device.laptop}) {
     width: 90rem;
   }
+
+  @media screen and (${device.tablet}) {
+    width: 80rem;
+  }
+
+  /* @media screen and (${device.ipad}) {
+    width: 60rem;
+  } */
 `;
 
 export const LogoContainer = styled.div`
@@ -52,6 +60,14 @@ export const LogoContainer = styled.div`
       font-size: 2.05rem;
     }
   }
+
+  @media screen and (${device.tablet}) {
+    margin-right: 3rem;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 export const Nav = styled.ul`
@@ -72,6 +88,15 @@ export const Nav = styled.ul`
     li {
       font-size: 1.5rem;
       margin-right: 1.4rem;
+    }
+  }
+
+  @media screen and (${device.laptop}) {
+    margin-right: 3rem;
+
+    li {
+      font-size: 1.3rem;
+      margin-right: 1.2rem;
     }
   }
 `;

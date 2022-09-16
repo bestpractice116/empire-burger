@@ -12,4 +12,8 @@ export const Container = styled.div`
   @media screen and (${device.laptop}) {
     width: 90rem;
   }
+
+  @media screen and (${device.tablet}) {
+    width: 80rem;
+  }
 `;

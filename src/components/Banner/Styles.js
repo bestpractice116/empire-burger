@@ -17,6 +17,10 @@ export const Container = styled.section`
     top: 0;
     z-index: -1;
   }
+
+  @media screen and (${device.ipad}) {
+    margin-bottom: 24rem;
+  }
 `;
 
 export const AdContainer = styled.div`
@@ -67,6 +71,30 @@ export const AdContainer = styled.div`
       font-size: 2rem;
     }
   }
+
+  @media screen and (${device.tablet}) {
+    max-width: 80rem;
+
+    h2 {
+      font-size: 4.8rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    max-width: 60rem;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -93,5 +121,16 @@ export const Button = styled.button`
 
   @media screen and (${device.laptop}) {
     font-size: 1.8rem;
+  }
+
+  @media screen and (${device.tablet}) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (${device.tablet}) {
+    font-size: 1.3rem;
+
+    height: 3.5rem;
+    padding: 0.5rem 1rem;
   }
 `;
