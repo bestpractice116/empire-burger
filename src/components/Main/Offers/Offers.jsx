@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./Style";
+import { Container } from "./Styles";
 import BurgersOnOffer from "./BurgersOnOffer/BurgersOnOffer";
 
 const Offers = () => {

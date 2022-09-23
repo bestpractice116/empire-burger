@@ -129,6 +129,24 @@ export const Nav = styled.div`
       }
     }
   }
+
+  @media screen and (${device.ipad}) {
+    width: 60rem;
+
+    ul {
+      margin-right: 0;
+
+      li {
+        font-size: 1.4rem;
+        margin-right: 0;
+        margin-left: 1.4rem;
+      }
+    }
+
+    div > div {
+      display: none;
+    }
+  }
 `;
 
 export const HorizontalLine = styled.div`

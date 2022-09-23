@@ -93,6 +93,7 @@ export const OfferInfo = styled.div`
   }
 
   h4 {
+    width: fit-content;
     font-size: 1.8rem;
     color: ${(props) => props.color};
     font-weight: 400;

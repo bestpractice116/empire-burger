@@ -34,6 +34,8 @@ export const Container = styled.section`
   }
 
   @media screen and (${device.ipad}) {
+    text-align: center;
+
     p {
       width: 40rem;
     }

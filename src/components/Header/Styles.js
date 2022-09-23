@@ -32,9 +32,9 @@ export const Navigation = styled.div`
     width: 80rem;
   }
 
-  /* @media screen and (${device.ipad}) {
+  @media screen and (${device.ipad}) {
     width: 60rem;
-  } */
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -91,12 +91,12 @@ export const Nav = styled.ul`
     }
   }
 
-  @media screen and (${device.laptop}) {
-    margin-right: 3rem;
+  @media screen and (${device.ipad}) {
+    margin-right: 0;
 
     li {
-      font-size: 1.3rem;
-      margin-right: 1.2rem;
+      margin-right: 0;
+      margin-left: 1.4rem;
     }
   }
 `;
@@ -128,6 +128,10 @@ export const SocialMedia = styled.div`
       font-weight: 700;
       font-size: 1.6rem;
     }
+  }
+
+  @media screen and (${device.ipad}) {
+    display: none;
   }
 `;
 

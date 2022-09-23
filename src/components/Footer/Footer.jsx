@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Bottom, Nav, HorizontalLine } from "./Style";
+import { Container, Bottom, Nav, HorizontalLine } from "./Styles";
 import { colors } from "../../styles/Global";
 
 import SocialIcons from "../Shared/SocialIcons/SocialIcons";
