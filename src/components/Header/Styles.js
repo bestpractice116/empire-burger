@@ -35,6 +35,10 @@ export const Navigation = styled.div`
   @media screen and (${device.ipad}) {
     width: 60rem;
   }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 36rem;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -98,6 +102,10 @@ export const Nav = styled.ul`
       margin-right: 0;
       margin-left: 1.4rem;
     }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    display: none;
   }
 `;
 

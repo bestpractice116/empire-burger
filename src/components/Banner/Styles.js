@@ -20,6 +20,10 @@ export const Container = styled.section`
 
   @media screen and (${device.ipad}) {
     margin-bottom: 24rem;
+
+    img {
+      object-position: 57% 50%;
+    }
   }
 `;
 
@@ -30,6 +34,11 @@ export const AdContainer = styled.div`
   width: 117rem;
 
   color: ${colors.brown};
+
+  h2,
+  h4 {
+    width: fit-content;
+  }
 
   h2 {
     font-family: "Lilita One";
@@ -86,6 +95,7 @@ export const AdContainer = styled.div`
 
   @media screen and (${device.ipad}) {
     max-width: 60rem;
+    top: 100px;
 
     h2 {
       font-size: 4rem;
@@ -95,10 +105,15 @@ export const AdContainer = styled.div`
       font-size: 1.5rem;
     }
   }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 36rem;
+  }
 `;
 
 export const Button = styled.button`
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
 
@@ -127,10 +142,14 @@ export const Button = styled.button`
     font-size: 1.5rem;
   }
 
-  @media screen and (${device.tablet}) {
+  @media screen and (${device.ipad}) {
     font-size: 1.3rem;
 
     height: 3.5rem;
     padding: 0.5rem 1rem;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 15rem;
   }
 `;

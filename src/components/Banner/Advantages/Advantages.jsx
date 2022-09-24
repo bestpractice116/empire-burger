@@ -39,7 +39,7 @@ const Advantages = () => {
         </AdvantageIcon>
         <AdvantageInfo>
           <h2>Delivery Speed</h2>
-          <p>Entregamos em menos de 45 minutos</p>
+          <p>Entregamos em menos de 30 minutos</p>
         </AdvantageInfo>
       </Advantage>
     </Container>

@@ -16,4 +16,12 @@ export const Container = styled.div`
   @media screen and (${device.tablet}) {
     width: 80rem;
   }
+
+  @media screen and (${device.ipad}) {
+    width: fit-content;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    margin-bottom: 6.4rem;
+  }
 `;

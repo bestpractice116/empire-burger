@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Bottom, Nav, HorizontalLine } from "./Styles";
 import { colors } from "../../styles/Global";
+import { sizes } from "../../utils/constants/sizes";
 
 import SocialIcons from "../Shared/SocialIcons/SocialIcons";
 import GoogleMaps from "../Shared/GoogleMaps/GoogleMaps";
 import Logo from "../Shared/Svg/Logo";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(null);
+
+  window.addEventListener("resize", () => {
+    const size = sizes.mobile_medium.replace("px", "");
+    window.screen.width < Number(size) ? setIsMobile(true) : setIsMobile(false);
+  });
+
   return (
     <Container>
       <h2>Onde fica o nosso castelo</h2>
@@ -20,6 +28,8 @@ const Footer = () => {
               <span>Empire</span> Burger
             </h1>
           </div>
+          {isMobile && <HorizontalLine />}
+
           <div>
             <ul>
               <li>Home</li>
@@ -27,6 +37,7 @@ const Footer = () => {
               <li>Cardápio</li>
               <li>Sobre</li>
             </ul>
+            {isMobile && <HorizontalLine />}
             <SocialIcons color={colors.yellow} />
           </div>
         </Nav>

@@ -37,6 +37,7 @@ export const Hashtag = styled.div`
 
 export const Badge = styled.div`
   display: flex;
+  align-items: center;
   width: 57rem;
 
   margin-right: 3rem;
@@ -65,10 +66,62 @@ export const Badge = styled.div`
   @media screen and (${device.laptop}) {
     margin-bottom: 6.4rem;
   }
+
+  @media screen and (${device.ipad}) {
+    width: 40rem;
+    margin-right: 0;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    div {
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 37.9rem;
+    padding: 1.8rem 1.3rem;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    div {
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.4rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
 `;
 
 export const VerticalLine = styled.div`
   border: 1px solid rgba(29, 6, 5, 0.4);
   height: 8.2rem;
   margin: auto 1.5rem;
+
+  @media screen and (${device.ipad}) {
+    height: 6rem;
+  }
+
+  @media screen and (${device.ipad}) {
+    margin: auto 1.4rem;
+  }
 `;

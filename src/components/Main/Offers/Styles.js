@@ -34,10 +34,16 @@ export const Container = styled.section`
   }
 
   @media screen and (${device.ipad}) {
-    text-align: center;
-
     p {
       width: 40rem;
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    margin-bottom: 3.79rem;
+
+    p {
+      width: 37rem;
     }
   }
 `;

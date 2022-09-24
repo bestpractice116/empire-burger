@@ -38,7 +38,7 @@ const ClosingTime = () => {
         <VerticalLine />
         <div>
           <h3>Horário de funcionamento</h3>
-          <h4>Segunda-feira à sexta-feira: 17h00 - 23h00</h4>
+          <h4>Segunda a sexta: 17h00 - 23h00</h4>
           <h4>Sabado a domingo: 18h00 - 23h00</h4>
         </div>
       </Badge>

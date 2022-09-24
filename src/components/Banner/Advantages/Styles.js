@@ -31,6 +31,18 @@ export const Container = styled.div`
     box-shadow: none;
     bottom: -160px;
   }
+
+  @media screen and (${device.mobile_medium}) {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 2.5rem 3.1rem;
+    bottom: -210px;
+
+    box-shadow: 0 4px 40px ${colors.onhover};
+    border-radius: 1rem;
+    background-color: ${colors.white};
+  }
 `;
 
 export const Advantage = styled.div`
@@ -55,6 +67,19 @@ export const Advantage = styled.div`
       border-radius: 0 0 1rem 1rem;
     }
   }
+
+  @media screen and (${device.mobile_medium}) {
+    justify-content: flex-start;
+    width: 30rem;
+    padding: 0;
+
+    :nth-child(1),
+    :nth-child(3),
+    :nth-child(5) {
+      border: none;
+      border-radius: 0;
+    }
+  }
 `;
 
 export const AdvantageIcon = styled.div`
@@ -75,6 +100,11 @@ export const AdvantageIcon = styled.div`
   @media screen and (${device.tablet}) {
     width: 5rem;
     height: 5rem;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 6rem;
+    height: 6rem;
   }
 `;
 
@@ -109,6 +139,20 @@ export const AdvantageInfo = styled.div`
       font-size: 1.4rem;
     }
   }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 18rem;
+    text-overflow: ellipsis;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 export const VerticalLine = styled.div`
@@ -117,5 +161,14 @@ export const VerticalLine = styled.div`
 
   @media screen and (${device.ipad}) {
     display: none;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    display: block;
+    border-left: none;
+    border-top: 1px solid #492e1526;
+    height: 0;
+    width: 29rem;
+    margin: 1.6rem 0;
   }
 `;

@@ -76,6 +76,16 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media screen and (${device.mobile_medium}) {
+    article {
+      width: 37rem;
+
+      img {
+        width: 37rem;
+      }
+    }
+  }
 `;
 
 export const OfferInfo = styled.div`

@@ -24,6 +24,12 @@ export const Container = styled.section`
     line-height: 2.2rem;
     margin-bottom: 3.2rem;
   }
+
+  @media screen and (${device.mobile_medium}) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 export const Bottom = styled.footer`
@@ -48,6 +54,10 @@ export const Bottom = styled.footer`
       font-weight: 700;
       color: #020e1fb0;
     }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    height: fit-content;
   }
 `;
 
@@ -147,6 +157,60 @@ export const Nav = styled.div`
       display: none;
     }
   }
+
+  @media screen and (${device.mobile_medium}) {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+
+    div {
+      margin-bottom: 1.3rem;
+
+      h1 {
+        font-size: 2.9rem;
+      }
+    }
+
+    div:has(ul) {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+      margin-right: 0;
+
+      li {
+        font-size: 1.8rem;
+        margin-left: 0;
+        margin-bottom: 1.38rem;
+
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    div > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      height: fit-content;
+
+      * > {
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+      }
+    }
+
+    div > svg {
+      height: fit-content;
+    }
+  }
 `;
 
 export const HorizontalLine = styled.div`
@@ -156,5 +220,9 @@ export const HorizontalLine = styled.div`
 
   @media screen and (${device.laptop}) {
     width: 90rem;
+  }
+
+  @media screen and (${device.laptop}) {
+    width: 38rem;
   }
 `;
