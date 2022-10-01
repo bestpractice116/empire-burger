@@ -1,4 +1,5 @@
 # Empire Burger
+![empireburger](https://user-images.githubusercontent.com/89430601/193375953-a1313dd5-1040-4f06-ae41-3124abe66bad.gif)
 
 Este projeto é uma landing page desenvolvida para uma hamburgueria fictícia chamada [Empire Burger](https://empire-burger-harlon.netlify.app/)!
 
