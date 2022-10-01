@@ -1,8 +1,6 @@
 # Empire Burger
 
-Este projeto é uma landing page desenvolvida para uma hamburgueria fictícia chamada Empire Burger!
-
-(EM ANDAMENTO)
+Este projeto é uma landing page desenvolvida para uma hamburgueria fictícia chamada [Empire Burger](https://empire-burger-harlon.netlify.app/)!
 
 <br>
 
@@ -28,7 +26,7 @@ $ npm start
 <br>
 
 ## 📝 Critérios de aceite
-Desafio proposto por [BRChallenges]([brchallenges](https://www.brchallenges.com/)), site de desafios criado por [Leonardo Vargas](https://github.com/leovargasdev) e [protótipo](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg/Empire-Burger?node-id=0%3A1) feito no Figma por [Tiago Alves](https://designerprodutivo.com.br/link-bio/).
+Desafio proposto por [BRChallenges](https://www.brchallenges.com/), site de desafios criado por [Leonardo Vargas](https://github.com/leovargasdev) e [protótipo](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg/Empire-Burger?node-id=0%3A1) feito no Figma por [Tiago Alves](https://designerprodutivo.com.br/link-bio/).
 
 Segue os critérios de avaliação por nível:
 
